@@ -140,14 +140,27 @@
         <a href="https://www.google.com/maps/place/%D9%85%D8%B3%D8%AC%D8%AF+%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D9%85+%D8%A7%D9%84%D8%AD%D8%B3%D9%86+%D8%B9%D9%84%D9%8A%D9%87+%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%E2%80%AD/@26.1101312,50.4875236,17z/data=!3m1!4b1!4m6!3m5!1s0x3e49b37ddca7259f:0xee849c4ff556a1ff!8m2!3d26.1101312!4d50.4875236!16s%2Fg%2F11t5xprk1q?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D" class="link" target="_blank">
             <img src="location-icon.png" alt="Location Logo">Location
         </a>
-        <a href="https://forms.gle/DNYpAp94XX5pt9JD7" class="link" target="_blank">
-            <img src="benefit-icon.png" alt="Benefit Logo">Benefit (IBAN)
-        </a>
+
+        <div class="link">
+            <img src="benefit-icon.png" alt="IBAN Logo" style="width: 24px; height: 24px; margin-right: 10px;">
+            <button onclick="showIBAN()" style="background:none; border:none; font-size:16px; font-weight:bold; cursor:pointer; color:#004d40;">
+                Benefit (IBAN)
+            </button>
+            <span id="iban" style="display:none; margin-left:10px; font-weight:bold;"></span>
+        </div>
     </div>
 
     <!-- Footer Section -->
     <footer>
         &copy; malhasan.bh
     </footer>
+
+    <script>
+        function showIBAN() {
+            const iban = "BH95AUBB00008162306300"; // Replace this with your actual IBAN
+            document.getElementById('iban').textContent = iban;
+            document.getElementById('iban').style.display = 'inline';
+        }
+    </script>
 </body>
 </html>
