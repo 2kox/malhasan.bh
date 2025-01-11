@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malhasan.bh</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('green-marble.jpg'); /* Ensure this file exists */
+            background-color: #004d40; /* Fallback color */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        header {
+            padding: 10px 20px; /* Reduced padding */
+        }
+
+        header .image-container {
+            display: inline-block;
+            padding: 5px; /* Reduced padding */
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        header .image {
+            width: 120px; /* Reduced size */
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 24px; /* Reduced font size */
+            margin: 20px 0 0; /* Increased margin-top to create more space */
+            font-family: "Georgia", serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Links Section Styling */
+        .link-container {
+            margin: 20px auto; /* Increased top margin */
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            color: #004d40;
+            text-decoration: none;
+            margin: 20px 0; /* Increased margin between boxes */
+            padding: 12px; /* Padding */
+            border-radius: 25px;
+            font-size: 16px; /* Font size */
+            font-weight: bold;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .link img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .link:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.05);
+        }
+
+        /* Footer Section */
+        footer {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px; /* Reduced padding */
+            font-size: 14px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            .link {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="image-container">
+            <img src="logo.png" alt="malhasan.bh" class="image">
+        </div>
+        <h1>malhasan.bh</h1>
+    </header>
+
+    <!-- Links Section -->
+    <div class="link-container">
+        <a href="https://www.instagram.com/malhasan.bh?igsh=MWl5NnVjOGNwemt4cQ==" class="link" target="_blank">
+            <img src="instagram-icon.png" alt="Instagram Logo">Instagram
+        </a>
+        <a href="https://forms.gle/DNYpAp94XX5pt9JD7" class="link" target="_blank">
+            <img src="whatsapp-icon.png" alt="WhatsApp Logo">WhatsApp
+        </a>
+        <a href="https://youtube.com/@malhasan.bh1?si=wkiJxd1cVG2L_KbJ" class="link" target="_blank">
+            <img src="youtube-icon.png" alt="YouTube Logo">YouTube
+        </a>
+        <a href="https://www.tiktok.com/@malhasan.bh?_t=ZS-8sxxGtfynb8&_r=1" class="link" target="_blank">
+            <img src="tiktok-icon.png" alt="TikTok Logo">TikTok
+        </a>
+        <a href="https://forms.gle/DNYpAp94XX5pt9JD7" class="link" target="_blank">
+            <img src="location-icon.png" alt="Location Logo">Location
+        </a>
+        <a href="https://forms.gle/DNYpAp94XX5pt9JD7" class="link" target="_blank">
+            <img src="benefit-icon.png" alt="Benefit Logo">Benefit (IBAN)
+        </a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; malhasan.bh
+    </footer>
+</body>
+</html>
